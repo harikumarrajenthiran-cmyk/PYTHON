@@ -51,3 +51,4 @@ print(a>>1)'''
 
 '''123task1'''
 n=int(input("enter a number:12345")
+"nepal"
