@@ -1,1 +1,162 @@
+# 1 bitwise AND of two numbers
+'''a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+print(a&b)'''
+
+
+# 2 bitwise OR of the number
+'''a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+print(a|b)'''
+
+
+# 3 bitwise XOR of two nuumber
+'''a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+print(a^b)'''
+
+
+#4 bitwise NOT of a number
+'''a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+print(~a)'''
+
+
+# 5 input bill amount
+'''a=int(input("enter the bill amount:"))
+gst=a*18/100
+total=a*gst
+print("total bill:",total)'''
+
+
+# 6 input 5person weight find average
+'''p1=int(input("enter weight for p1:"))
+p2=int(input("enter weight for p2:"))
+p3=int(input("enter weight for p3:"))
+p4=int(input("enter weight for p4:"))
+p5=int(input("enter weight for p5:"))
+avgwt=(p1+p2+p3+p4+p5)/5
+print("average weigit of 5 person is:",avgwt)'''
+
+
+# 7 check whether a number is even using bitwise operator
+'''n=int(input("enter a number:"))
+if n & 1 == 0:
+    print("even")
+else:
+    print("odd")'''
+
+
+# 8 input a number find it square
+'''a=int(input("enter a number:"))
+print("square of the number is:",a*a)'''
+
+
+# 9 input a number find its cube
+'''a=int(input("enter a number:"))
+print("cube fo the number is:",a*a*a)'''
+
+
+# 10 swap two numbers using XOR operator
+'''a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+a=a^b
+b=a^b
+a=a^b
+print("after swapping:")
+print("a=",a)
+print("b=",b)'''
+
+
+# 11 compare two numbers and print whether they are equal
+'''a=int(input("enter a number:"))
+b=int(input("enter a numbber:"))
+if a==b:
+    print("both are equel")
+else:
+    print("both are not equel")'''
+
+
+# 12 check whether first number is greater than second number
+'''a=int(input("enter 1st number:"))
+b=int(input("enter 2nd number:"))
+if a>b:
+    print("1st number is greater than 2nd number")
+elif a==b:
+    print("both number are equal")
+else:
+    print("1st number is lesser than 2nd number")'''
+
+
+# 13 check whether a number is less than 50
+'''a=int(input("enter a number:"))
+if a<50:
+    print("true")
+else:
+    print("false")'''
+
+
+# 14 compare two numbers using>=operators
+'''a=int(input("enter 1st number:"))
+b=int(input("enter 2nd number:"))
+if a>b:
+    print("1st number is greater than or equal to 2nd number")
+else:
+    print("1st number is lesser than 2nd number")'''
+
+
+# 15 check whether two values are equal
+'''a=int(input("enter 1st number:"))
+b=int(input("enter 2nd number:"))
+if a!=b:
+    print("true")
+else:
+    print("false")'''
+
+
+# 16 check whether a number exists in a list
+'''numbers=[10,20,30,40,50]
+n=int(input("enter a number:"))
+if n in numbers:
+    print("number exists in the list")
+else:
+    print("number dose not exist in the list")'''
+
+
+# 17 calculate compound interest
+'''p=float(input("enter principal amount:"))
+r=float(input("enter rate of interest:"))
+t=float(input("enter time in years:"))
+amount=p*(1+r/100)**t
+ci=amount-p
+print("compound interest:",ci)
+print("total amount:",amount)'''
+
+
+# 18 verify whether an element exists in a=[2,3,4,5,6,7]use membership operators
+'''a=[2,3,4,5,6,7]
+n=int(input("enter an element:"))
+if n in a:
+    print("element exists")
+else:
+    print("enter dose not exist")'''
+
+
+# 19 create two variables with same value and check using is
+'''a=10
+b=10
+if a is b:
+    print("both variables refers to the same object")
+else:
+    print("both variables refers to different object")'''
+
+
+# 20 assign one variable to another and check using is not
+'''a=10
+b=a
+if a is not b:
+    print("both variables are different objects")
+else:
+    print("both variables refers to the same object")'''
+    
 
