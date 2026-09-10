@@ -1,1 +1,208 @@
+'''# 1. Electricity Bill
+units = int(input("Enter units: "))
+if units <= 100:
+    bill = units * 1.5
+elif units <= 200:
+    bill = 100*1.5 + (units-100)*2.5
+else:
+    bill = 100*1.5 + 100*2.5 + (units-200)*4
+print(f"Bill: Rs.{bill}")'''
 
+
+'''# 2. Online Shopping Discount
+amount = float(input("Enter purchase amount: "))
+if amount >= 5000:
+    discount = 0.30
+elif amount >= 3000:
+    discount = 0.20
+elif amount >= 1000:
+    discount = 0.10
+else:
+    discount = 0
+final = amount - (amount*discount)
+print(f"Discount {discount*100}% - Final price: Rs.{final}")'''
+
+
+'''# 3. ATM Withdrawal
+balance = 100000
+withdraw = int(input("Enter amount to withdraw: "))
+if withdraw <= balance and withdraw % 100 == 0:
+    balance -= withdraw
+    print(f"Withdraw successful. Remaining balance: {balance}")
+else:
+    print("Cannot withdraw. Check balance or enter multiples of 100")'''
+
+
+'''# 4. Student Grade
+marks = int(input("Enter marks (0-100): "))
+if marks >= 90: print("Grade A")
+elif marks >= 75: print("Grade B")
+elif marks >= 60: print("Grade C")
+elif marks >= 50: print("Grade D")
+else: print("Grade F - Fail")'''
+
+
+'''# 5. Traffic Signal
+signal = input("Enter signal color (Red/Yellow/Green): ").lower()
+if signal == "red":
+    print("Stop")
+elif signal == "yellow":
+    print("Get Ready")
+elif signal == "green":
+    print("Go")
+else:
+    print("Invalid signal")'''
+
+
+'''# 6. Temperature Alert
+temp = float(input("Enter temperature: "))
+if temp >= 100:
+    print("CRITICAL ALERT! Temperature too high")
+elif temp >= 60:
+    print("Warning: High temperature")
+else:
+    print("Temperature Normal")'''
+
+
+'''# 7. Login with 3 Attempts
+correct_pass = "hari@123"
+for i in range(3):
+    p = input(f"Attempt {i+1}/3 - Enter password: ")
+    if p == correct_pass:
+        print("Login Successful")
+        break
+else:
+    print("Account Locked")'''
+
+
+'''# 8. Multiplication Table
+n = int(input("Enter number: "))
+for i in range(1, 11):
+    print(f"{n} x {i} = {n*i}")'''
+
+
+'''# 9. Mobile Data Usage - 7 days
+total = 0
+limit = 2.0 # 2 GB daily limit
+for day in range(1, 8):
+    data = float(input(f"Day {day} usage in GB: "))
+    total += data
+    if data > limit:
+        print(f"Alert! Day {day} limit exceeded")
+avg = total / 7
+print(f"Total: {total} GB, Average: {avg:.2f} GB")'''
+
+
+'''# 10. Parking Charges
+hours = int(input("Enter parking hours: "))
+if hours <= 2:
+    charge = 30
+else:
+    charge = 30 + (hours-2)*10
+print(f"Parking Charge: Rs.{charge}")'''
+
+
+'''# 11. Prime Number Check
+num = int(input("Enter number: "))
+if num > 1:
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+else:
+    print("Not Prime")'''
+
+
+'''# 12. Food Ordering System
+menu = {"1.Burger": 80, "2.Pizza": 150, "3.Coke": 40}
+total = 0
+while True:
+    print(menu)
+    print("4.Exit")
+    ch = input("Choose item: ")
+    if ch == '4':
+        break
+    elif '1' in ch: total += 80
+    elif '2' in ch: total += 150
+    elif '3' in ch: total += 40
+print(f"Total Bill: Rs.{total}")'''
+
+
+'''# 13. Attendance of 10 Employees
+present = 0
+absent = 0
+for i in range(1, 11):
+    att = input(f"Employee {i} Present? (P/A): ").lower()
+    if att == 'p':
+        present += 1
+    else:
+        absent += 1
+print(f"Present: {present}, Absent: {absent}")'''
+
+
+'''# 14. Fuel Bills - stop at 0 quantity
+while True:
+    qty = float(input("Enter fuel qty (0 to stop): "))
+    if qty == 0:
+        break
+    price = 102 # per litre
+    print(f"Bill: Rs.{qty*price}")'''
+
+
+'''# 15. Bus Ticket - stop at 0
+while True:
+    age = int(input("Enter passenger age (0 to stop): "))
+    if age == 0:
+        break
+    base = 100
+    if age < 12:
+        fare = base * 0.5
+    elif age > 60:
+        fare = base * 0.7
+    else:
+        fare = base
+    print(f"Ticket: Rs.{fare}")'''
+
+
+'''# 16. Pattern 12345 / 1234 / 123 / 12 / 1
+for i in range(5, 0, -1):
+    for j in range(1, i+1):
+        print(j, end="")
+    print()'''
+
+
+'''# 17. Diamond Pattern *
+n = 5
+for i in range(1, n+1):
+    print(" "*(n-i) + "* " * i)
+for i in range(n-1, 0, -1):
+    print(" "*(n-i) + "* " * i)'''
+
+
+'''# 18. Hollow Pyramid *
+n = 5
+for i in range(1, n+1):
+    for j in range(n-i):
+        print(" ", end="")
+    for j in range(1, 2*i):
+        if j==1 or j==2*i-1 or i==n:
+            print("*", end="")
+        else:
+            print(" ", end="")
+    print()'''
+
+
+'''# 19. Alphabet Pattern
+for i in range(1, 6):
+    for j in range(65, 65+i):
+        print(chr(j), end="")
+    print()'''
+
+
+'''# 20. Inverted Pyramid *
+n = 5
+for i in range(n, 0, -1):
+
+    print(" "*(n-i) + "* " * i)'''
